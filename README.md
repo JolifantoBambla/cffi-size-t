@@ -7,6 +7,11 @@ You can just clone this repository to one of your `ql:*local-project-directories
 
     (ql:quickload :cffi-size-t)
 
+## Usage
+This system provides one package with one type:
+
+    cffi-size-t:size-t
+
 ## Rationale
 I have multiple Common Lisp projects providing CFFI bindings for C libraries and in each one I had to copy a definition of `size-t`.
 Once I just used an `unsigned-int` and things immediately broke.
